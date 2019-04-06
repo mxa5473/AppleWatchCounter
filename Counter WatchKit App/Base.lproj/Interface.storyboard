@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Counter_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="left" text="0" textAlignment="center" id="yF3-Hc-QcK"/>
+                        <button width="1" alignment="left" title="Increment" id="6ON-6O-oYy">
+                            <connections>
+                                <action selector="incrementCounter" destination="AgC-eL-Hgc" id="ZSJ-ow-nNF"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Clear" id="9IL-gU-uiG">
+                            <connections>
+                                <action selector="clearCounter" destination="AgC-eL-Hgc" id="R0t-E8-LaS"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Save" id="aqT-7X-PXt">
+                            <connections>
+                                <action selector="saveCounter" destination="AgC-eL-Hgc" id="l0v-yp-H2N"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="counterLabel" destination="yF3-Hc-QcK" id="mc5-YV-WSl"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
